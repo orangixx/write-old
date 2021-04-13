@@ -1,0 +1,172 @@
+* {
+	-ms-overflow-style: none;
+}
+body {
+	margin: 0;
+}
+.material-icons {
+	font-family: 'Material Icons Outlined';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+
+	-webkit-font-smoothing: antialiased;
+
+	text-rendering: optimizeLegibility;
+
+	-moz-osx-font-smoothing: grayscale;
+
+	font-feature-settings: 'liga';
+}
+a {
+	text-decoration: none;
+}
+.logo {
+	float: left;
+	margin-top: 1.5em;
+}
+h1 {
+  font-weight: 600;
+  font-family: 'wr-sans', sans-serif;
+}
+.titleName {
+  padding-top: 1em;
+  text-align: center;
+}
+.titleNav li {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'wr-sans', sans-serif;
+}
+.article h2 {
+	font-size: 18px;
+	font-weight: 600;
+	font-family: 'wr-sans', sans-serif;
+}
+.article p {
+  color: #757575;
+	font-size: 15px;
+	font-weight: 400;
+  font-family: 'wr-sans', sans-serif;
+}
+.article img {
+	margin-top: -8.75em;
+  float: top;
+}
+@media screen and (min-width: 812px) {
+  main {
+    padding-top: 37em;
+  }
+	.featuredCol {
+		display: none;
+  }
+  .title {
+    text-align: center;
+    margin-top: 5em;
+  }
+  .article {
+    padding-bottom: 8em;
+		padding-top: 1em;
+		margin-left: 22vw;
+		margin-right: 22vw;
+  }
+  .titleNav {
+    padding-top: 5em;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .titleNav,
+  .logo {
+    margin-left: 22vw;
+  }
+}
+@media screen and (max-width: 812px) {
+  main {
+    margin-top: 28em;
+  }
+  .titleNav {
+    display: none;
+  }
+  .title {
+    margin-left: -10px;
+    padding-bottom: 1em;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  h1,
+  .logo {
+    margin-left: 10px;
+  }
+  .article img {
+		margin-right: 10px;
+		width: 180px;
+	}
+	.article {
+		padding-left: 10px;
+    float: right;
+    padding-bottom: 7em;
+	}
+	.article h2 {
+		font-size: 18px;
+	}
+	.article p {
+		font-size: 15px;
+		margin-right: 130px;
+	}
+}
+.header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	z-index: 10;
+}
+.header ul {
+	padding: 0;
+	list-style: none;
+	margin-right: 22vw;
+	overflow: hidden;
+}
+.header__menu {
+	clear: both;
+	max-height: 0;
+	transition: max-height 0.2s ease-out;
+}
+.header li a {
+	color: white;
+	display: block;
+	padding: 15px;
+	margin-left: -25px;
+	margin-top: -0.5em;
+}
+.header li a:hover {
+	color: #292929;
+}
+.header li img {
+	border-radius: 100%;
+	margin-top: -5px;
+}
+@media (min-width: 48em) {
+	.header li {
+		float: left;
+	}
+	.header li a {
+		padding: 20px 30px;
+	}
+	.header__menu {
+		clear: none;
+		float: right;
+		max-height: none;
+	}
+	.header__menu-icon {
+		display: none;
+	}
+}
